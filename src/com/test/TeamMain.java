@@ -4,7 +4,7 @@ import com.dao.TeamDAO;
 import com.model.Captain;
 import com.model.Team;
 
-public class TeamMain {
+public class TeamMain { 
 
 	public static void main(String[] args) {
 		Team teamObj=new Team();

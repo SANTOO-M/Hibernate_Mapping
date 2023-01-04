@@ -29,6 +29,14 @@ public class Mobile implements Serializable{
 	@JoinColumn(name = "app")
 	private Collection<App> apto;
 	
+	public Collection<App> getApto() {
+		return apto;
+	}
+
+	public void setApto(Collection<App> apto) {
+		this.apto = apto;
+	}
+
 	public int getMobileId() {
 		return mobileId;
 	}
