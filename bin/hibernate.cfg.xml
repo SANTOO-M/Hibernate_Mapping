@@ -12,7 +12,10 @@
     <property name="current_session_context_class">thread</property>
     <property name="hibernate.show_sql">true</property>
     <property name="hbm2ddl.auto">update</property>
-    <mapping class="com.model.Mobile"/>
-    <mapping class="com.model.App"/>
+   	<property name="hibernate.cache.use_second_level_cache">true</property>
+   	<property name="hibernate.cache.region.factory_class">org.hibernate.cache.ehcache.SingletonEhCacheRegionFactory</property>
+    <!--    <mapping class="com.model.Mobile"/>
+    <mapping class="com.model.App"/> -->
+    <mapping class="com.model.Student"/>
   </session-factory>
 </hibernate-configuration>
