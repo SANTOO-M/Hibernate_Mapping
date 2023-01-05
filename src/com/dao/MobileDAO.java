@@ -8,7 +8,7 @@ import org.hibernate.cfg.Configuration;
 import com.model.Mobile;
 
 public class MobileDAO {
-	public void save(Mobile m) {
+	public void saveDAO(Mobile m) {
 		try {
 			Configuration cfg=new Configuration();
 			cfg.configure();

@@ -32,7 +32,6 @@ public class Team implements Serializable {
 	@PrimaryKeyJoinColumn
 	private Captain capObj;
 	
-	
 	public Captain getCapObj() {
 		return capObj;
 	}

@@ -9,7 +9,7 @@ import com.model.Team;
 
 public class TeamDAO {
 
-	public void save(Team teamObj) {
+	public void saveDAO(Team teamObj) {
 		Configuration cfg=new Configuration();
 		cfg.configure();
 		cfg.addAnnotatedClass(Team.class);

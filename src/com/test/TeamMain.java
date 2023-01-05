@@ -8,20 +8,20 @@ public class TeamMain {
 
 	public static void main(String[] args) {
 		Team teamObj=new Team();
-		teamObj.setTeamLogo("Chakra");
-		teamObj.setTeamSize(11);
-		teamObj.setTeamType("Cricket");
+		teamObj.setTeamLogo("Eagle");
+		teamObj.setTeamSize(7);
+		teamObj.setTeamType("Action");
 		
 		Captain capObj=new Captain();
-		capObj.setCaptName("Pandya");
-		capObj.setCaptAge(28);
-		capObj.setCaptPlace("Mumbai");
+		capObj.setCaptName("Dhoni");
+		capObj.setCaptAge(40);
+		capObj.setCaptPlace("Jarkant");
 		
 		teamObj.setCapObj(capObj);
 		capObj.setTeamObj(teamObj);
 		
 		TeamDAO teamdao=new TeamDAO();
-		teamdao.save(teamObj);
+		teamdao.saveDAO(teamObj);
 	}
 
 }
